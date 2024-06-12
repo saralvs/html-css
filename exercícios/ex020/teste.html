@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: salmon
+        }
+
+        .importante {
+            color: darkred;
+            text-decoration: underline;
+        }
+
+        .importante::after {
+            content: ' \002714';
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de compras</h1>
+    <ul>
+        <li><a href="https://pt.wikipedia.org/wiki/Ovo" target="_blank">Ovos</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/%C3%93leo_de_soja" target="_blank" class="importante">Óleo de soja</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/Carne" target="_blank">Carne</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/Alface" target="_blank">Alface</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/Tomate" target="_blank">Tomate</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/Leite" target="_blank" class="importante">Leite</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/Arroz" target="_blank">Arroz</a></li>
+    </ul>
+</body>
+</html>

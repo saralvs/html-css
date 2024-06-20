@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /* background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed; */
 
+            /*Shorthand - background
+                color > image > position > [size] >  repeat >  attachment
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center/ cover no-repeat fixed;
         }
         
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -28,6 +34,7 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quasi molestias, excepturi praesentium blanditiis modi expedita, voluptate assumenda saepe neque nulla, officia repellendus veniam qui unde incidunt natus libero nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veniam explicabo quo tempore neque ad, numquam temporibus obcaecati error expedita. Rem excepturi ullam consequuntur ipsam dignissimos quo ab animi iste? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero quidem dolorem atque corporis autem nesciunt maxime laboriosam, officia quibusdam excepturi rerum necessitatibus, deserunt soluta placeat illo laborum blanditiis modi non?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quasi molestias, excepturi praesentium blanditiis modi expedita, voluptate assumenda saepe neque nulla, officia repellendus veniam qui unde incidunt natus libero nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veniam explicabo quo tempore neque ad, numquam temporibus obcaecati error expedita. Rem excepturi ullam consequuntur ipsam dignissimos quo ab animi iste? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero quidem dolorem atque corporis autem nesciunt maxime laboriosam, officia quibusdam excepturi rerum necessitatibus, deserunt soluta placeat illo laborum blanditiis modi non?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quasi molestias, excepturi praesentium blanditiis modi expedita, voluptate assumenda saepe neque nulla, officia repellendus veniam qui unde incidunt natus libero nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veniam explicabo quo tempore neque ad, numquam temporibus obcaecati error expedita. Rem excepturi ullam consequuntur ipsam dignissimos quo ab animi iste? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero quidem dolorem atque corporis autem nesciunt maxime laboriosam, officia quibusdam excepturi rerum necessitatibus, deserunt soluta placeat illo laborum blanditiis modi non?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quasi molestias, excepturi praesentium blanditiis modi expedita, voluptate assumenda saepe neque nulla, officia repellendus veniam qui unde incidunt natus libero nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veniam explicabo quo tempore neque ad, numquam temporibus obcaecati error expedita. Rem excepturi ullam consequuntur ipsam dignissimos quo ab animi iste? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero quidem dolorem atque corporis autem nesciunt maxime laboriosam, officia quibusdam excepturi rerum necessitatibus, deserunt soluta placeat illo laborum blanditiis modi non?</p>

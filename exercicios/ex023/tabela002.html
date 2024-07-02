@@ -10,6 +10,7 @@
         }
 
         table {
+            position: relative;
             width: 500px;
             border-collapse: collapse;
         }
@@ -24,9 +25,30 @@
             color: white;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+            /*  "odd" ou "2n-1" = linhas ímpares
+                "even" ou "2n" = linhas pares 
+            */
+        }
+
         td.num {
             text-align: right;
         }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
     </style>
 </head>
 <body>
@@ -34,6 +56,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE:
+        CAPTION
             THEAD:
                 TR, TD, TH
             TBODY:
@@ -42,10 +65,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
 
@@ -162,10 +186,15 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.147.120</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maxime nostrum a vel quod culpa quibusdam, porro quo autem, earum ex provident voluptas officiis. Doloremque voluptate eum laborum ipsum pariatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae nobis ratione accusantium fugit sed incidunt officiis ipsa? Repellat, molestias animi? Obcaecati saepe ratione, labore sint aperiam dolores incidunt cupiditate itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsa facere est eligendi, consequuntur ipsum reprehenderit, repellat minima ex soluta, ducimus molestiae aspernatur corrupti minus sapiente dignissimos qui. At, distinctio.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maxime nostrum a vel quod culpa quibusdam, porro quo autem, earum ex provident voluptas officiis. Doloremque voluptate eum laborum ipsum pariatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae nobis ratione accusantium fugit sed incidunt officiis ipsa? Repellat, molestias animi? Obcaecati saepe ratione, labore sint aperiam dolores incidunt cupiditate itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsa facere est eligendi, consequuntur ipsum reprehenderit, repellat minima ex soluta, ducimus molestiae aspernatur corrupti minus sapiente dignissimos qui. At, distinctio.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maxime nostrum a vel quod culpa quibusdam, porro quo autem, earum ex provident voluptas officiis. Doloremque voluptate eum laborum ipsum pariatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae nobis ratione accusantium fugit sed incidunt officiis ipsa? Repellat, molestias animi? Obcaecati saepe ratione, labore sint aperiam dolores incidunt cupiditate itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsa facere est eligendi, consequuntur ipsum reprehenderit, repellat minima ex soluta, ducimus molestiae aspernatur corrupti minus sapiente dignissimos qui. At, distinctio.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maxime nostrum a vel quod culpa quibusdam, porro quo autem, earum ex provident voluptas officiis. Doloremque voluptate eum laborum ipsum pariatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae nobis ratione accusantium fugit sed incidunt officiis ipsa? Repellat, molestias animi? Obcaecati saepe ratione, labore sint aperiam dolores incidunt cupiditate itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsa facere est eligendi, consequuntur ipsum reprehenderit, repellat minima ex soluta, ducimus molestiae aspernatur corrupti minus sapiente dignissimos qui. At, distinctio.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maxime nostrum a vel quod culpa quibusdam, porro quo autem, earum ex provident voluptas officiis. Doloremque voluptate eum laborum ipsum pariatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae nobis ratione accusantium fugit sed incidunt officiis ipsa? Repellat, molestias animi? Obcaecati saepe ratione, labore sint aperiam dolores incidunt cupiditate itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsa facere est eligendi, consequuntur ipsum reprehenderit, repellat minima ex soluta, ducimus molestiae aspernatur corrupti minus sapiente dignissimos qui. At, distinctio.</p>
 </body>
 </html>

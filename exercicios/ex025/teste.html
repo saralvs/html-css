@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de formulários</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Filmes/séries favoritos</legend>
+
+            <input type="checkbox" name="hotd" id="ihotd">
+            <label for="ihotd">House of The Dragon</label><br>
+
+            <input type="checkbox" name="tlou" id="itlou">
+            <label for="itlou">The Last of Us</label><br>
+
+            <input type="checkbox" name="you" id="iyou">
+            <label for="iyou">You</label> 
+        </fieldset>
+
+        <fieldset>
+            <legend>Qual é o melhor?</legend>
+
+            <input type="radio" name="melhor" id="iserie" value="Série">
+            <label for="iserie">Séries</label>
+
+            <input type="radio" name="melhor" id="ifilme" value="Filme">
+            <label for="ifilme">Filmes</label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

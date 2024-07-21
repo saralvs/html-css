@@ -34,7 +34,7 @@ declarações para retrato */
     }
 }
 
-/*--------------------------------------------------------------------
+/*------------------------------------------------------------------
  declarações para paisagem */
 @media screen and (orientation:landscape) {
     body {
